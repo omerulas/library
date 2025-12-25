@@ -15,10 +15,10 @@ function createUrl({ path, query }: URLRequirements) {
 
 export const urls = {
     /* Static create url */
-    csrf: createUrl({ path: 'set-csrf' }),
-    check: createUrl({ path: 'check-user' }),
-    login: createUrl({ path: 'login' }),
-    logout: createUrl({ path: 'logout' }),
+    csrf: createUrl({ path: 'auth/set-csrf' }),
+    check: createUrl({ path: 'auth/check-user' }),
+    login: createUrl({ path: 'auth/login' }),
+    logout: createUrl({ path: 'auth/logout' }),
     /* Method based create url */
     // users: (filter?: IRoleFlags) => createUrl({ path: 'users', query: filter }),
 }
